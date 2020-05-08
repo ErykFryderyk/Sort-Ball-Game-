@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    font-family: 'Indie Flower',
+    cursive;
+}
+
+@keyframes shake{
+    0%{transform: translateX(-10px);}
+    10%{transform: translateX(10px);}
+    15%{transform: translateX(-8px);}
+    20% {
+        transform: translateX(8px);
+    }
+    22% {
+        transform: translateX(-4px);
+    }
+    24% {
+        transform: translateX(4px);
+    }
+    25%{
+        transform: translateX(0px);
+    }
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 2px;
+}
+.container{
+    background-color: black;
+    background-image: url('./img/background-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.menu-square h1{
+    text-align: center;
+
+}
+
+.options{
+    background-color: rgb(131, 131, 131);
+    max-width: 700px;
+    min-height: 50px;
+    padding: 20px;
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+
+.start-box{
+    position: relative;
+    max-height: 400px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(175, 175, 175);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.75);
+    
+}
+
+.box{
+    padding: 20px 0 20px 0;
+    background-color: rgb(131, 131, 131);
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.75);
+    max-width: 700px;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 20px;
+    margin-bottom: 10px;
+}
+
+
+.button{
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(85, 85, 85);
+    color: rgb(85, 85, 85);
+    font-family: 'Indie Flower',
+    cursive;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
+}
+
+.button:hover{
+    background-color:rgb(104, 104, 104);
+    color: white;
+    border: white 2px solid;
+}
+.reload-btn{
+    height: 40px;
+    border: 2px solid rgb(85, 85, 85);
+    color: rgb(85, 85, 85);
+    background-color: transparent;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out,
+    border .3s ease-in-out,
+    color .2s ease-in-out;
+}
+
+.reload-btn:hover{
+    background-color:rgb(104, 104, 104);
+    color: white;
+    border: white 2px solid;
+
+    
+}
+
+.menu-btn{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 7px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(85, 85, 85);
+    color: rgb(85, 85, 85);
+    font-family: 'Indie Flower',
+    cursive;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
+}
+
+.menu-btn:hover {
+    background-color: rgb(104, 104, 104);
+    color: white;
+    border: white 2px solid;
+}
+
+.rectangle{
+    width: 50px;
+    height: 140px;
+    background-color: transparent;
+    border: 2px rgb(201, 201, 201) solid;
+    margin:10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 3px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.rectangle::before{
+    position: absolute;
+    content: '';
+    height:5px;
+    width: 60px;
+    border: 2px solid rgb(201, 201, 201);
+    border: 2px solid rgb(201, 201, 201);
+    top: -9px;
+    left: -9px;
+    border-radius: 5px;
+}
+
+.rectangle::after{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 46px;
+    background-color: rgb(131, 131, 131);
+    top: -3px;
+    left: 0px;
+}
+
+.ball{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+.ball-green{
+    background-color: green;
+}
+
+.ball-yellow{
+    background-color: rgb(206, 206, 14);
+}
+
+.ball-blue{
+    background-color: rgb(39, 39, 172);
+}
+.ball-purple {
+    background-color: rgb(94, 1, 94);
+}
+.ball-orange {
+    background-color: rgb(223, 146, 4);
+}
+.ball-red {
+    background-color: rgb(175, 0, 0);
+}
+.ball-pink {
+    background-color: rgb(215, 88, 231);
+}
+.ball-black {
+    background-color: rgb(49, 49, 49);
+}
+
+.ball-active{
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+
+.ball-error{
+    animation-name: shake;
+    animation-duration: 0.5s;
+}
+
+.body-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.win-box{
+    position: relative;
+    max-height: 400px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(175, 175, 175);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.75);
+}
