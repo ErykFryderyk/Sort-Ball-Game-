@@ -2,9 +2,11 @@
 
 Sort Ball is a game about placing balls of the same color in a glass container. 
 
-## Technologies:
-JavaScript
-HTML 
-CSS
+## Technologies
+
+Project is created with:
+* Java Script
+* HTML
+* CSS
 
 Live: https://erykfryderyk.github.io/Sort-Ball-Game-/
