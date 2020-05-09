@@ -75,7 +75,6 @@ const moveBallToSelectedRectangle = (e) =>{
             } else {
                 $activeBall.classList.add('ball-error');
                 $activeBall.classList.remove('ball-active');
-                console.log('xD');
             }
             $activeBall = null;
         }
