@@ -9,4 +9,4 @@ Project is created with:
 * HTML
 * CSS
 
-Live: https://erykfryderyk.github.io/Sort-Ball-Game-/
+[Demo](https://erykfryderyk.github.io/Sort-Ball-Game-/)
