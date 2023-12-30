@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6{
     content: '';
     height: 6px;
     width: 46px;
-    background-color: rgb(131, 131, 131);
+    background-color: rgb(0, 0, 0);
     top: -3px;
     left: 0px;
 }
@@ -267,13 +267,13 @@ h1, h2, h3, h4, h5, h6{
 
 .win-box{
     position: relative;
-    max-height: 400px;
-    width: 200px;
+    max-height: 1000px;
+    width: 500px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(175, 175, 175);
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.75);
