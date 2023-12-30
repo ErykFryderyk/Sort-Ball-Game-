@@ -19,7 +19,7 @@ const chooseBall = (e) =>{
     const parent = e.target.parentElement;
  
     if($activeBall === null){
-        if(parent.childElementCount > 0 && parent.firstElementChild.classList.contains('ball')){
+        if(parent.childElementCount > 0){
                 parent.firstElementChild.classList.toggle('ball-active');
                 $activeBall = parent.firstElementChild;
                 if($activeBall.classList.contains('ball-error')){
