@@ -85,7 +85,7 @@ const checkingSortBalls = () => {
             }
         }
         if(colorOfRectangles.length === $numberOfRectangles){
-            $bodyOverlay.style.display = "flex";
+            $bodyOverlay.style.display = "none";
         }
     }
 }
