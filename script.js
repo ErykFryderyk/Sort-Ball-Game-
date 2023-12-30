@@ -46,36 +46,25 @@ const moveBallToSelectedRectangle = (e) =>{
     }
 
     if (target.classList.contains('rectangle')){
+            const el = document.createElement('div')
 
-            if(target.children.length === 0 || target.children[0].title === $activeBall.title){
-                const el = document.createElement('div')
+            el.setAttribute('title', $activeBall.title);
+            el.setAttribute('class', $activeBall.classList);
+            el.classList.remove('ball-active');
 
-                el.setAttribute('title', $activeBall.title);
-                el.setAttribute('class', $activeBall.classList);
-                el.classList.remove('ball-active');
-
-                target.prepend(el);
-                $activeBall.remove();
-            }else {
-                $activeBall.classList.add('ball-error');
-                $activeBall.classList.remove('ball-active');
-            }
+            target.prepend(el);
+            $activeBall.remove();
             $activeBall=null;
 
         }else if(target.parentElement.classList.contains('rectangle')){
-            if (target.parentElement.children.length === 0 || target.parentElement.children[0].title === $activeBall.title){
-                const el = document.createElement('div')
+            const el = document.createElement('div')
 
-                el.setAttribute('title', $activeBall.title);
-                el.setAttribute('class', $activeBall.classList);
-                el.classList.remove('ball-active');
+            el.setAttribute('title', $activeBall.title);
+            el.setAttribute('class', $activeBall.classList);
+            el.classList.remove('ball-active');
 
-                target.parentElement.prepend(el);
-                $activeBall.remove();
-            } else {
-                $activeBall.classList.add('ball-error');
-                $activeBall.classList.remove('ball-active');
-            }
+            target.parentElement.prepend(el);
+            $activeBall.remove();
             $activeBall = null;
         }
 }
