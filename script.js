@@ -19,14 +19,14 @@ const chooseBall = (e) =>{
     const parent = e.target.parentElement;
  
     if($activeBall === null){
-        if(parent.childElementCount > 0 && parent.firstElementChild.classList.contains('ball')){
+        if(parent.childElementCount > 0){
                 parent.firstElementChild.classList.toggle('ball-active');
                 $activeBall = parent.firstElementChild;
                 if($activeBall.classList.contains('ball-error')){
                     $activeBall.classList.remove('ball-error');
                 }
 
-         }else if(e.target.classList.contains('rectangle') && e.target.childElementCount >0){
+         }else if(e.target.classList.contains('rectangle')){
             e.target.firstElementChild.classList.toggle('ball-active');
             $activeBall = e.target.firstElementChild;
             
@@ -45,7 +45,7 @@ const moveBallToSelectedRectangle = (e) =>{
         $activeBall=null;
     }
 
-    if (target.classList.contains('rectangle') && target.childElementCount < 3 && $activeBall !== null){
+    if (target.classList.contains('rectangle')){
 
             if(target.children.length === 0 || target.children[0].title === $activeBall.title){
                 const el = document.createElement('div')
@@ -62,7 +62,7 @@ const moveBallToSelectedRectangle = (e) =>{
             }
             $activeBall=null;
 
-        }else if(target.parentElement.classList.contains('rectangle') && target.parentElement.childElementCount < 3){
+        }else if(target.parentElement.classList.contains('rectangle')){
             if (target.parentElement.children.length === 0 || target.parentElement.children[0].title === $activeBall.title){
                 const el = document.createElement('div')
 
@@ -87,10 +87,10 @@ const checkingSortBalls = () => {
     
     for (let i = 0; i < countParents; i++) {
         const element = $allRectangle[i]
-        if(element.childElementCount === 3){
+        if(element.childElementCount === 5){
             const titleBall = element.children[1].title;
 
-            if (titleBall === element.firstElementChild.title && titleBall === element.lastElementChild.title){
+            if (titleBall === element.firstElementChild.title){
                 $score++;
                 colorOfRectangles.push(titleBall);
             }
