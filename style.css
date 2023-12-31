@@ -184,11 +184,43 @@ h1, h2, h3, h4, h5, h6{
     position: relative;
     cursor: pointer;
 }
+
+.rectangle::before{
+    width: 50px;
+    height: 140px;
+    background-color: transparent;
+    border: 2px rgb(0, 0, 0) solid;
+    margin:10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 3px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.rectangle::after{
+    width: 50px;
+    height: 140px;
+    background-color: transparent;
+    border: 2px rgb(0, 0, 0) solid;
+    margin:10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 3px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
 /*comentari de 1 linia*/
 /* This is
 a multi-line
 comment */
-
+/*
 .rectangle::before{
     position: absolute;
     content: '';
@@ -210,7 +242,7 @@ comment */
     top: -3px;
     left: 0px;
 }
-
+*/
 .ball{
     height: 40px;
     width: 40px;
