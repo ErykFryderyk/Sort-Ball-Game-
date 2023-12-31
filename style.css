@@ -305,9 +305,9 @@ comment */
 }
 
 .win-box{
-    position: relative;
+    position: absolute;
     max-height: 1000px;
-    width: 500px;
+    width: 700px;
     text-align: center;
     display: flex;
     flex-direction: column;
