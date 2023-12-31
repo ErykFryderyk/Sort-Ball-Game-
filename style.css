@@ -33,10 +33,10 @@ body{
 h1, h2, h3, h4, h5, h6{
     letter-spacing: 2px;
 }
-/*
+
 .container{
-    background-color: black;
-    background-image: url('./img/background-image.png');
+    background-color: white;
+    /*background-image: url('./img/background-image.png');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6{
     flex-direction: column;
 
 }
-*/
+
 
 .menu-square h1{
     text-align: center;
