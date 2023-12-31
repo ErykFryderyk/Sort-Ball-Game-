@@ -35,8 +35,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .container{
-    background-color: white;
-    background-image: url('./img/fons_blanc.png');
+    background-color: black;
+    /*background-image: url('./img/fons_blanc.png');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
