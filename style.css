@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6{
     background-position: center;
     color: white;
     min-height:100vh;
-    width: 100vw;
+    width: 1000vw;
     display: flex;
     justify-content: center;
     align-items: center;
