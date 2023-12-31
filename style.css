@@ -33,22 +33,22 @@ body{
 h1, h2, h3, h4, h5, h6{
     letter-spacing: 2px;
 }
-/*
+
 .container{
     background-color: black;
-    background-image: url('./img/background-image.png');
+    /*background-image: url('./img/background-image.png');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
-    min-height:100vh;
-    width: 100vw;
+    min-height:1000vh;
+    width: 1000vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-}*/
+}
 
 .menu-square h1{
     text-align: center;
