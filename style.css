@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6{
 
 .container{
     background-color: white;
-    /*background-image: url('./img/background-image.png');*/
+    background-image: url('./img/fons_blanc.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6{
     position: relative;
     cursor: pointer;
 }
-
+/*
 .rectangle::before{
     width: 50px;
     height: 140px;
@@ -218,11 +218,12 @@ h1, h2, h3, h4, h5, h6{
     position: relative;
     cursor: pointer;
 }
+*/
 /*comentari de 1 linia*/
 /* This is
 a multi-line
 comment */
-/*
+
 .rectangle::before{
     position: absolute;
     content: '';
@@ -244,7 +245,7 @@ comment */
     top: -3px;
     left: 0px;
 }
-*/
+
 .ball{
     height: 40px;
     width: 40px;
